@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Dunbar Tall';
+  src: url('/fonts/fonnts/fonts/fonnts.com-DunbarTall_Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dunbar Tall';
+  src: url('/fonts/fonnts/fonts/fonnts.com-DunbarTall_Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dunbar Tall';
+  src: url('/fonts/fonnts/fonts/fonnts.com-Dunbar_Tall_Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dunbar Tall';
+  src: url('/fonts/fonnts/fonts/fonnts.com-Dunbar_Tall_Bold_Italic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --background: 55 100% 50%; /* #ffe600 */
+    --foreground: 222 22% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 22% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 22% 12%;
+
+    --primary: 334 96% 45%; /* #e2027a */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 334 84% 36%; /* #b50060 */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 50 40% 90%;
+    --muted-foreground: 220 12% 35%;
+
+    --accent: 202 100% 91%; /* #d2e7ff */
+    --accent-foreground: 222 22% 12%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 50 20% 80%;
+    --input: 50 20% 80%;
+    --ring: 44 100% 20%; /* #6a5f00 */
+
+    --radius: 2rem;
+
+    --carambar-gradient: linear-gradient(135deg, hsl(334 84% 36%), hsl(334 96% 45%));
+    --carambar-shadow: 0 24px 60px -32px hsl(334 84% 36% / 0.25);
+  }
+
+  .dark {
+    --background: 222 22% 12%;
+    --foreground: 0 0% 98%;
+    --card: 222 22% 14%;
+    --card-foreground: 0 0% 98%;
+    --popover: 222 22% 14%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 334 96% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 334 84% 36%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 222 18% 20%;
+    --muted-foreground: 220 10% 65%;
+    --accent: 202 100% 91%;
+    --accent-foreground: 222 22% 12%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 222 18% 26%;
+    --input: 222 18% 26%;
+    --ring: 44 100% 20%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Dunbar Tall', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Dunbar Tall', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .carambar-gradient-text {
+    background: var(--carambar-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .carambar-gradient-bg {
+    background: var(--carambar-gradient);
+  }
+
+  .carambar-shadow {
+    box-shadow: var(--carambar-shadow);
+  }
+
+  .ghost-border {
+    border: 1px solid hsl(var(--border) / 0.15);
+  }
+}
