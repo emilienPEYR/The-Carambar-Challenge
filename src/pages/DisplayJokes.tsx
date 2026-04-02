@@ -47,7 +47,7 @@ const DisplayJokes = () => {
   const currentJoke = jokes[currentIndex];
 
   return (
-    <div className="min-h-screen bg-background relative overflow-hidden">
+    <div className="min-h-screen bg-transparent relative overflow-hidden">
       <img
         src="/carambar-foot.png"
         alt="Carambar football"

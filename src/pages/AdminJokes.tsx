@@ -94,7 +94,7 @@ const AdminJokes = () => {
 
   if (!authenticated) {
     return (
-      <div className="min-h-screen bg-background relative overflow-hidden">
+      <div className="min-h-screen bg-transparent relative overflow-hidden">
         <div className="relative z-10 flex min-h-screen items-center justify-center px-6 py-16">
           <form
             onSubmit={handleLogin}
@@ -174,7 +174,7 @@ const AdminJokes = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background px-6 py-12">
+    <div className="min-h-screen bg-transparent px-6 py-12">
       <div className="max-w-4xl mx-auto space-y-8">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <div>

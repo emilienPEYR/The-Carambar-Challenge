@@ -4,7 +4,7 @@ import { Monitor, Send, Shield, Sparkles } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen relative overflow-hidden bg-background">
+    <div className="min-h-screen relative overflow-hidden bg-transparent">
       <div className="relative z-10 container mx-auto px-6 py-16 md:py-20">
         <div className="mx-auto mb-8 flex justify-center">
           <img

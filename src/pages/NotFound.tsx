@@ -10,7 +10,7 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen bg-background relative overflow-hidden">
+    <div className="min-h-screen bg-transparent relative overflow-hidden">
       <div className="relative z-10 flex min-h-screen items-center justify-center px-6 text-center">
         <div className="space-y-4">
           <img src="/carambar-logo.png" alt="Carambar" className="mx-auto h-12 w-auto" />

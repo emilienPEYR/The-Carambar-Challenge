@@ -28,7 +28,7 @@ const SubmitJoke = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background relative overflow-hidden">
+    <div className="min-h-screen bg-transparent relative overflow-hidden">
       <div className="relative z-10 px-5 py-10 sm:py-14">
         <div className="mx-auto w-full max-w-sm">
           <div className="mb-6 text-center">
